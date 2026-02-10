@@ -42,3 +42,29 @@ else:
 #fruits.remove(fruits[round(len(fruits)/2,0)])
 #print(middle_fruit)
 #print(int(len(fruits) / 2))
+fruits.sort()
+for n in range(0, len(fruits)):
+    print(fruits)
+    fruits.pop()
+
+# TASK FIVE
+my_set = {4, 4, 5, 9}
+print(my_set)
+my_tuple = (4, 4, 66, 43, 100, 1000, 88, 100000, 25)
+print(my_tuple)
+def whats_biggest (your_tuple):
+    biggest = 0
+    for x in range(len(your_tuple)):
+        if your_tuple[x] >= biggest:
+            biggest = my_tuple[x]
+        else:
+            continue
+    return(biggest)
+
+print(whats_biggest(my_tuple)) 
+
+print(my_tuple.index(25))
+print(max(my_tuple))
+print(max(my_set))
+my_set.add(1000)
+print(my_set.pop())

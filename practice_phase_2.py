@@ -20,10 +20,22 @@
         # break
 
 # TASK 8
-for i in range(2, 21, 2):
-    print(i)
+# for i in range(2, 21, 2):
+#     print(i)
 
-my_fruits = ['Mango', 'Cherry', 'Banana', 'Apple']
-for i in range(len(my_fruits)):
-    print(my_fruits[i].upper())
+# my_fruits = ['Mango', 'Cherry', 'Banana', 'Apple']
+# for i in range(len(my_fruits)):
+#     print(my_fruits[i].upper())
 
+# TASK 9
+nums = [1, 3, 4, 199, 101, 110001]
+for i in nums:
+    if i >= 100:
+        print(i)
+    else:
+        print(f"The number {i} is less then 100")
+even_nums = 0
+for i in nums:
+    if i % 2 == 0:
+        even_nums += 1
+print(f"There are {even_nums} even numbers")

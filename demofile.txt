@@ -1,0 +1,11 @@
+It's the 1 line of the file
+It's the 2 line of the file
+It's the 3 line of the file
+It's the 4 line of the file
+It's the 5 line of the file
+I appended that line
+I appended that line again
+I appended that line again
+I appended that line last time ?
+I appended that line last last time ?
+It's the lastest line!

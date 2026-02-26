@@ -36,11 +36,11 @@ class Bookings(Base):
     __tablename__ = "bookings"
 
     id = Column(Integer, Identity(always=True), primary_key=True, index=True)
-    client_id = Column(Integer, ForeignKey("clients.id"))
+    client_id = Column(Integer, ForeignKey("clients.id", ondelete="SET NULL"), nullable=True)
     date_in = Column(Date, nullable=False)
     date_out = Column(Date, nullable=False)
     persons_num = Column(Integer, server_default=text("1"), nullable=False)
-    apt_id = Column(Integer, ForeignKey("apartments.id"))
+    apt_id = Column(Integer, ForeignKey("apartments.id"), nullable=False)
     created_at = Column(DateTime, server_default=text("now()"))
     booking_type = Column(BookingTypeEnum, nullable=False)
 
